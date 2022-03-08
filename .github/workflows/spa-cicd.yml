@@ -126,7 +126,7 @@ jobs:
     - name: Purge CDN endpoint on ${{ env.CDN_ENDPOINT_NAME }}
       uses: Azure/cli@1.0.4
       with:
-        azcliversion: 2.21.0
+        azcliversion: latest
         inlineScript: |
            az cdn endpoint purge --content-paths  "/*" --profile-name ${{ env.CDN_PROFILE_NAME }} --name ${{ env.CDN_ENDPOINT_NAME }} --resource-group ${{ env.RESOURCE_GROUP_NAME }}
 
