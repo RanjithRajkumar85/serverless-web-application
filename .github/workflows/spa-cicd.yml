@@ -118,7 +118,7 @@ jobs:
       uses: Azure/cli@1.0.4
       with:
         # Azure CLI version to be used to execute the script. If not provided, latest version is used
-        azcliversion: 2.21.0
+        azcliversion: latest
         # Specify the script here
         inlineScript: az storage blob upload-batch -s ./${{ env.APP_SOURCE_PATH }}/${{ env.ANGULAR_PATH }}/dist -d '$web' --account-name ${{ env.AZURE_STORAGE_NAME }}
 
