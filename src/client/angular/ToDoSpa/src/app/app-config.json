@@ -1,10 +1,10 @@
 {
   "auth": {
-    "clientId": "__clientAppId__",
-    "authority": "__tenantDomainName__",
+    "clientId": "8761ebe7-f7a8-4883-9315-f7ac5a75878f",
+    "authority": "https://login.microsoftonline.com/hpe.onmicrosoft.com",
     "validateAuthority": true,
-    "redirectUri": "__clientAppURL__",
-    "postLogoutRedirectUri": "__clientAppURL__",
+    "redirectUri": "https://ranatodo-dev.azureedge.net",
+    "postLogoutRedirectUri": "https://ranatodo-dev.azureedge.net",
     "navigateToLoginRequestUrl": true
   },
     "cache": {
@@ -15,8 +15,8 @@
     },
     "resources": {
       "todoListApi": {
-        "resourceUri": "__apimURL__/todos",
-        "resourceScope": "__backendAPIScope__"
+        "resourceUri": "https://apim-ranatodo-dev.azure-api.net/serverlessApi/todos",
+        "resourceScope": "api://fn-ranatodo-dev/user_impersonation"
       }
     }     
 }
