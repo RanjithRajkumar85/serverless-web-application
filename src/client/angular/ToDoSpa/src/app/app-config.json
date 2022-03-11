@@ -15,7 +15,7 @@
     },
     "resources": {
       "todoListApi": {
-        "resourceUri": "https://apim-ranatodo-dev.azure-api.net/serverlessApi/todos",
+        "resourceUri": "https://apim-ranatodo-dev.azure-api.net/2do/todos",
         "resourceScope": "api://fn-ranatodo-dev/user_impersonation"
       }
     }     
